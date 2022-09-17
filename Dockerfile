@@ -6,5 +6,5 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page283/mi
 WORKDIR /var/www/html
 RUN unzip milina.zip
 RUN cp -rvf milina/* .
-RUN rm -rf milina milina.zip
+RUN rm -rf milina-html milina.zip
 CMD ["/usr/sbin/apache2", "-D",  "FOREGROUND"]
